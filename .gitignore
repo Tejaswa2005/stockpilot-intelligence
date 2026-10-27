@@ -1,0 +1,53 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+
+# Node.js / frontend
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# Build and editor files
+dist/
+build/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local databases
+*.sqlite3
+*.db
+
+# Python environments and caches
+.venv/
+.pytest_cache/
+__pycache__/
+
+# Frontend dependencies and build output
+frontend/node_modules/
+frontend/dist/
+
+# Exclude generated datasets until public sharing is confirmed
+data/inventory_dataset.csv
+data/inventory_dataset_cleaned.csv
+frontend/public/data/
+
+# TypeScript build cache
+*.tsbuildinfo

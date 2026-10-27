@@ -1,0 +1,11 @@
+column_name,data_type,description,notes_and_assumptions
+date,datetime string,Timestamp attached to the inventory record.,Supplied field; timestamp cadence must be validated before time-series forecasting.
+product_id,string,Product/SKU identifier.,500 distinct IDs in the provided dataset.
+category,string,Product category label.,Four observed categories.
+season,string,Season label associated with the record.,Five observed labels; confirm how these labels were assigned.
+stock_qty,integer,Recorded quantity currently in stock.,Observed range 0–500; unit of measure not specified.
+reorder_level,integer,Stock threshold associated with a product record.,Observed range 20–100; business definition should be confirmed.
+daily_sales,integer,Sales/demand quantity represented by the row.,"Name suggests a daily measure, but row timestamp cadence does not establish daily observations."
+unit_cost,decimal,Unit cost associated with the product record.,Currency is not explicitly specified in the CSV; do not label as INR without confirmation.
+supplier_id,string,Supplier identifier associated with the record.,30 distinct supplier IDs; names and additional supplier metadata are not supplied.
+lead_days,integer,Supplier lead time expressed in days.,Observed range 3–21 days.
